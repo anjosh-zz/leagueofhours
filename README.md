@@ -4,4 +4,4 @@ League of Hours lets you know how many hours you played in the last week or ten 
 
 The app uses the riot api to first get the summoner id using the region and summoner name given by the user. Then the app looks at the summoner's recent games and adds up the total time of each game played within the last seven days. Bootstrap is used for styling.
 
-leagueofhours.github.io
+https://leagueofhours.github.io
