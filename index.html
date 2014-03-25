@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./L-blue.ico">
+
+    <title>League of Hours</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+
+    <link href="./hours.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <!--
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">League of Hours</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          -->
+
+          <div class="inner cover">
+            <h1 class="cover-heading">League of Hours</h1>
+
+            <form id="get-hours" class="navbar-form" role="search" onsubmit="return getHours(region, summonerName);">
+              <p class="lead">Find out how many hours you've played League!</p>
+              <div id="form-group" class="form-group">
+                <select class="form-control" name="region">
+                  <option>NA</option>
+                  <option>EUNE</option>
+                  <option>EUW</option>
+                  <option>BR</option>
+                </select>
+                <input id="summoner-name" type="text" class="form-control" placeholder="Summoner Name" name="summonerName">
+              </div>
+              <button id="calculate" type="submit" class="btn btn-primary">Calculate</button>
+            </form>
+            <div id="progress" class="progress progress-striped active hide">
+              <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%">
+              </div>
+            </div>
+
+            <div id="hours-container" class="hide">
+              <h3 id="hours-message" class="hours-message">You've played <b id="hours">100</b> hours of League this week!</h3>
+              <button id="recalculate" type="submit" class="btn btn-danger btn-lg">Recalculate</button>
+            </div> 
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Made by <a href="https://github.com/Icarurs/cse3901-task7">Team/</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./cover_template/jquery.min.js"></script>
+    <script src="./cover_template/bootstrap.min.js"></script>
+    <script src="./cover_template/docs.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- JS for API calls -->
+    <script src="./hours.js"></script>
+  
+
+  </body>
+</html>

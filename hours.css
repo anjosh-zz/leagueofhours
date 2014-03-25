@@ -1,0 +1,17 @@
+.alert {
+  width: 400px;
+  margin: auto;
+}
+
+.progress {
+  width: 400px;
+  margin: auto;
+}
+
+.progress-bar {
+  width: 0;
+  -webkit-transition: width 2.0s ease !important;
+     -moz-transition: width 2.0s ease !important;
+       -o-transition: width 2.0s ease !important;
+          transition: width 2.0s ease !important;
+}
